@@ -1,0 +1,150 @@
+.header {
+  height: 60px;
+  background:white;
+  /* position: fixed; */
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 35px;
+  color: black;
+  line-height: 70px;
+}
+
+.header-nav ul{
+  display: flex;
+}
+
+.header-nav li {
+  margin-top: 0px;
+  margin-right: 35px;
+  font-size: 16px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.header-nav a {
+  color:  black;
+  text-decoration: none;
+}
+
+/* main */
+
+#eyecatch {
+  height: 300px;
+  background: url(../img/mv.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.eyecatch_ja {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+
+.company {
+  background-color: #fff;
+  padding: 80px 0;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.company-body {
+  width: 100%;
+  border-bottom: 1px solid #222;
+}
+
+.company-name {
+  padding: 20px 0;
+  border-top: 1px solid #222;
+  font-weight: bold;
+  width: 30%;
+}
+
+.company-name-date {
+  padding: 20px 0;
+  border-top: 1px solid #222;
+  font-weight: bold;
+  width: 30%;
+}
+
+/* contact */
+
+.contact-wrap {
+  height: 300px;
+  background-color: #f5f6f9;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+
+.contact-txt {
+  margin-bottom: 60px;
+}
+
+.contact-link {
+  font-weight: bold;
+  background-color: #cd0224;
+  color: #fff;
+  text-align: center;
+  padding: 10px 60px;
+  text-decoration: none;
+}
+
+/* footer */
+
+.footer {
+  position: fixed;
+}
+
+.footer-wrap {
+  height: 30px;
+  background-color: black;
+  display: flex;
+  padding: 20px 0;
+}
+
+.footer-copyright {
+  color: #fff;
+  margin-left: 100px;
+}
+
+.footer-list {
+  display: flex;
+  margin-left: 600px;
+}
+
+.footer-nav-item a {
+  color: #fff;
+  font-size: small;
+}
+
+.footer-nav-item::after {
+  content: "|";
+  display: inline-block;
+  padding: 0 10px;
+  color: #fff;
+}
