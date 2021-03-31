@@ -99,8 +99,15 @@
 .service-wrap {
   position: relative;
   padding: 20px 0;
-  width: 100%;
-  height: 900px;
+  /* width: 100%; */
+  /* height: 900px; */
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 0;
 }
 
 .service-wrap-title {
@@ -109,23 +116,21 @@
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .service-item {
-  width: calc((100% - (30px*2))/2);
-  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .service-img {
   width: 480px;
   height: auto;
-  margin: 5px 150px;
-}
-
-.service-list {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 5px;
+  /* align-items: center; */
+  margin-right: (100% - (49% * 2));
+  margin-left: 50px;
 }
 
 .item-title {
@@ -134,14 +139,14 @@
 
 .item-explain {
   width: 480px;
-  margin-left: 150px;
+  margin-left: 50px;
 }
 
 .service-btn {
   position: absolute;
   width: 300px;
-  margin-left: 580px;
-  margin-top: 50px;
+  margin-left: 500px;
+  margin-top: 20px;
   padding: 15px;
   color: white;
   background-color: #cd0224;
@@ -202,15 +207,15 @@
 .blog-wrap {
   width: 100%;
   height: 400px;
-  padding: 50px;
+  padding: 50px 0;
   position: relative;
 }
 
 .blog-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
   margin-top: 20px;
 }
 
@@ -221,10 +226,8 @@
 }
 
 .blog-item img {
-  width: 350px;
-  height: auto;
-  display: flex;
-  margin-bottom: 5px;
+  width: 32%;
+  margin-right: calc((100% - (32% * 3)) / 2);
 }
 
 
@@ -344,7 +347,7 @@
     display: block;
     width: 35px;
     height: 2px;
-    background-color: #fff;
+    background-color: black;
     transition: 0.8s;
   }
   
@@ -364,3 +367,12 @@
     display: none; /* デスクトップのナビを消す */
   }
 }
+
+  .service-wrap{
+  flex-wrap: wrap;
+  } 
+
+  /* .service-item {
+  width: 80%;
+  margin: 0 auto;
+  } */
