@@ -106,6 +106,7 @@
 .service-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding: 50px 0;
 }
@@ -122,7 +123,7 @@
 .service-item {
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .service-img {
@@ -130,8 +131,8 @@
   height: auto;
   margin: 0 auto;
   text-align: center;
-  /* margin-right: (100% - (49% * 2));
-  margin-left: 50px; */
+  margin-right: (100% - (49% * 2));
+  /* margin-left: 50px; */
 }
 
 .item-title {
@@ -147,8 +148,7 @@
 .service-btn {
   position: absolute;
   width: 300px;
-  margin-left: 500px;
-  margin-top: 20px;
+  margin-left: 40%;
   padding: 15px;
   color: white;
   background-color: #cd0224;
@@ -172,21 +172,23 @@
   justify-content: space-between;
   color: #fff;
   font-weight: bold;
-  padding-bottom: 10px;
+  margin-left: 50px;
 }
 
 .news-title-text {
-  width: 300px;
+  width: auto;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .news-btn {
-  width: 300px;
+  width: auto;
   font-size: 12px;
   background-color: #cd0224;
   color: #fff;
   text-align: center;
-  margin-left: 70%;
-  padding: 10px 20px;
+  /* margin-left: 70%; */
+  padding: 10px;
   text-decoration: none;
 }
 
@@ -258,7 +260,7 @@
 .service-btn2 {
   position: absolute;
   width: 300px;
-  margin-left: 500px;
+  margin-left: 40%;
   margin-top: 50px;
   padding: 15px;
   color: white;
@@ -341,6 +343,7 @@
   height: 30px;
   background-color: black;
   display: flex;
+  justify-content: space-between;
   padding: 20px 0;
 }
 
@@ -419,18 +422,39 @@
 
   .service-btn {
     width: auto;
-    margin: 0 auto;
   }
 
   .news-wrap {
     margin-top: 50px;
   }
 
+  .news-btn {
+    width: auto;
+    margin-left: 100px;
+  }
+
+  .news-title-text{
+    width: auto;
+  }
+
   .service-btn2 {
     width: auto;
   }
+
+  .blog-wrap {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .blog-item {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .footer-copyright {
     margin: 0;
+    width: auto;
+    text-align: center;
   }
 
   .footer-list {
