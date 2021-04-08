@@ -61,25 +61,31 @@
 /* news */
 
 .news-wrap {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.wrap {
   width: 960px;
   margin: 0 auto;
-  background-color: #fff;
 }
 
 .news-list {
-  margin: 80px 20px;
+  width: 100%;
+  height: auto;
 }
 
 .news-item {  
   background-color: #fff;
   border: 1px solid #000000;
-  margin-left: 100px;
+  padding: 5px;
   margin-bottom: 5px;
   margin-top: 10px;
 }
 
 .news-item-link {
   display: flex;
+  align-items: center;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
@@ -122,24 +128,37 @@
 /* footer */
 
 .footer {
-  position: fixed;
-}
-
-.footer-wrap {
-  height: 30px;
-  background-color: black;
-  display: flex;
+  background-color: #222;
   padding: 20px 0;
 }
 
+.footer-inner-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
 .footer-copyright {
+  width: auto;
   color: #fff;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .footer-list {
   display: flex;
-  margin-left: 600px;
+  flex-wrap: wrap;
+}
+
+.footer-nav-item {
+  width: auto;
+  padding-bottom: 5px;
 }
 
 .footer-nav-item a {
@@ -152,4 +171,66 @@
   display: inline-block;
   padding: 0 10px;
   color: #fff;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  #hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: 0.4s;
+  }
+  
+  #hamburger span {
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    transition: 0.8s;
+  }
+  
+  #hamburger span:nth-of-type(1) {
+    top: 10px; /* ハンバーガーメニューの1本目の棒 */
+  }
+  
+  #hamburger span:nth-of-type(2) {
+    top: 20px; /* ハンバーガーメニューの2本目の棒 */
+  }
+  
+  #hamburger span:nth-of-type(3) {
+    top: 30px; /* ハンバーガーメニューの3本目の棒 */
+  }
+  
+  .header-nav {
+    display: none; /* デスクトップのナビを消す */
+  }
+
+  .news-wrap {
+    width: 90%;
+  }
+
+  .wrap {
+    width: 60%;
+  }
+
+  .footer-list {
+    display: block;
+  }
+
+  .footer-nav-item {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .footer-nav-item::after {
+    content: none;
+  }
 }
