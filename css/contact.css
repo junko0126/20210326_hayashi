@@ -212,3 +212,20 @@
     content: none;
   }
 }
+
+@media screen and (max-width: 425px) {
+
+  .eyecatch_ja{
+    width: 100%;
+    text-align: center;
+  }
+
+  .wrap {
+    display: block;
+  }
+  
+  .footer-list {
+    text-align: center;
+    margin-top: 20px;
+  }
+  }

@@ -38,6 +38,7 @@
 
 #eyecatch {
   width: 100%;
+  height: 250px;
   background: url(../img/mv.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -227,4 +228,16 @@
 
   .footer-nav-item::after {
     content: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrap {
+    display: block;
+  }
+  
+  .footer-list {
+    text-align: center;
+    margin-top: 20px;
+  }
   }

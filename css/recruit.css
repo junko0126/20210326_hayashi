@@ -234,3 +234,26 @@
     content: none;
   }
 }
+
+@media screen and (max-width: 425px) {
+.contact-wrap {
+  padding: 50px;
+}
+
+.contact-title {
+  font-size: 30px;
+}
+
+.contact-link {
+  padding: 15px 80px;
+}
+
+.wrap {
+  display: block;
+}
+
+.footer-list {
+  text-align: center;
+  margin-top: 20px;
+}
+}

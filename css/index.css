@@ -74,7 +74,7 @@
 /* black_zone */
 .black_zone {
   width: 100%;
-  height: auto;
+  height: 300px;
   background-color: #222;
   position: relative;
 }
@@ -516,9 +516,6 @@
 }
 
 @media screen and (max-width: 425px) {
-/* .p {
-  line-height: 1;
-} */
 
 .eyecatch_ja {
   width: 80%;

@@ -86,13 +86,13 @@
 .news-item-link {
   display: flex;
   align-items: center;
-  font-weight: bold;
   text-decoration: none;
   padding: 20px;
 }
 
 .news-item-title {
   margin-left: 50px;
+  font-weight: bold;
 }
 
 /* contact */
@@ -113,6 +113,7 @@
 
 .contact-txt {
   margin-bottom: 60px;
+  line-height: 2em;
 }
 
 .contact-link {
@@ -233,4 +234,44 @@
   .footer-nav-item::after {
     content: none;
   }
+}
+
+@media screen and (max-width: 425px) {
+
+  .news-wrap  {
+    width: 330px;
+  }
+
+  .news-item-link {
+    padding: 5px;
+  }
+
+  .news-item-date {
+    font-size: 12px;
+  }
+
+  .news-item-title {
+    margin-left: 10px;
+  }
+
+  .contact-wrap {
+    padding: 50px;
+  }
+  
+  .contact-title {
+    font-size: 30px;
+  }
+  
+  .contact-link {
+    padding: 15px 80px;
+  }
+  
+.wrap {
+  display: block;
+}
+
+.footer-list {
+  text-align: center;
+  margin-top: 20px;
+}
 }
