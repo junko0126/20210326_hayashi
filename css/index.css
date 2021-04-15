@@ -83,6 +83,7 @@
   position: absolute;
   left: 150px;
   right: 150px;
+  line-height: 2em;
 }
 
 .top-title {
@@ -317,6 +318,7 @@
 
 .contact-txt {
   margin-bottom: 60px;
+  line-height: 2em;
 }
 
 .contact-link {
@@ -575,15 +577,15 @@
 }
 
 .contact-wrap {
-  padding: 0 20px;
+  padding: 50px;
 }
 
 .contact-title {
   font-size: 30px;
 }
 
-.contact-txt {
-  line-height: 1;
+.contact-link {
+  padding: 15px 80px;
 }
 
 .wrap {
