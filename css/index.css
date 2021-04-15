@@ -379,6 +379,12 @@
 }
 
 /* responsive */
+@media screen and (max-width: 1024px) {
+  .wrap {
+    width: 900px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #hamburger {
     width: 40px;
@@ -424,6 +430,10 @@
   .eyecatch_en {
     width: 80%;
     text-align: center;
+  }
+
+  .black_zone {
+    height: 400px;
   }
 
   .service-wrap{
